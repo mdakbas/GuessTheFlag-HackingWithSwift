@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		FDC5BAC32A77E79000C9F56F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC5BAC22A77E79000C9F56F /* AppDelegate.swift */; };
 		FDC5BAC52A77E79000C9F56F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC5BAC42A77E79000C9F56F /* SceneDelegate.swift */; };
-		FDC5BAC72A77E79000C9F56F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC5BAC62A77E79000C9F56F /* ViewController.swift */; };
-		FDC5BACA2A77E79000C9F56F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDC5BAC82A77E79000C9F56F /* Main.storyboard */; };
 		FDC5BACC2A77E79100C9F56F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDC5BACB2A77E79100C9F56F /* Assets.xcassets */; };
 		FDC5BACF2A77E79100C9F56F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDC5BACD2A77E79100C9F56F /* LaunchScreen.storyboard */; };
+		FDC5BAD82A77E83100C9F56F /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC5BAD72A77E83100C9F56F /* HomeVC.swift */; };
+		FDC5BADA2A77E83C00C9F56F /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC5BAD92A77E83C00C9F56F /* HomeViewModel.swift */; };
+		FDC5BADC2A77E84400C9F56F /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDC5BADB2A77E84400C9F56F /* Home.storyboard */; };
+		FDC5BAE52A794D6100C9F56F /* BorderColor + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC5BAE42A794D6100C9F56F /* BorderColor + Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FDC5BABF2A77E79000C9F56F /* GuessTheFlag-HackingSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GuessTheFlag-HackingSwift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDC5BAC22A77E79000C9F56F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDC5BAC42A77E79000C9F56F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FDC5BAC62A77E79000C9F56F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FDC5BAC92A77E79000C9F56F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FDC5BACB2A77E79100C9F56F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FDC5BACE2A77E79100C9F56F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FDC5BAD02A77E79100C9F56F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDC5BAD72A77E83100C9F56F /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		FDC5BAD92A77E83C00C9F56F /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		FDC5BADB2A77E84400C9F56F /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		FDC5BAE42A794D6100C9F56F /* BorderColor + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BorderColor + Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,33 @@
 		FDC5BAC12A77E79000C9F56F /* GuessTheFlag-HackingSwift */ = {
 			isa = PBXGroup;
 			children = (
+				FDC5BAE12A794D3100C9F56F /* Utility */,
+				FDC5BAD62A77E79900C9F56F /* HomeVC */,
 				FDC5BAC22A77E79000C9F56F /* AppDelegate.swift */,
 				FDC5BAC42A77E79000C9F56F /* SceneDelegate.swift */,
-				FDC5BAC62A77E79000C9F56F /* ViewController.swift */,
-				FDC5BAC82A77E79000C9F56F /* Main.storyboard */,
 				FDC5BACB2A77E79100C9F56F /* Assets.xcassets */,
 				FDC5BACD2A77E79100C9F56F /* LaunchScreen.storyboard */,
 				FDC5BAD02A77E79100C9F56F /* Info.plist */,
 			);
 			path = "GuessTheFlag-HackingSwift";
+			sourceTree = "<group>";
+		};
+		FDC5BAD62A77E79900C9F56F /* HomeVC */ = {
+			isa = PBXGroup;
+			children = (
+				FDC5BAD72A77E83100C9F56F /* HomeVC.swift */,
+				FDC5BAD92A77E83C00C9F56F /* HomeViewModel.swift */,
+				FDC5BADB2A77E84400C9F56F /* Home.storyboard */,
+			);
+			path = HomeVC;
+			sourceTree = "<group>";
+		};
+		FDC5BAE12A794D3100C9F56F /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				FDC5BAE42A794D6100C9F56F /* BorderColor + Ext.swift */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +147,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDC5BADC2A77E84400C9F56F /* Home.storyboard in Resources */,
 				FDC5BACF2A77E79100C9F56F /* LaunchScreen.storyboard in Resources */,
 				FDC5BACC2A77E79100C9F56F /* Assets.xcassets in Resources */,
-				FDC5BACA2A77E79000C9F56F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +160,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FDC5BAC72A77E79000C9F56F /* ViewController.swift in Sources */,
+				FDC5BAD82A77E83100C9F56F /* HomeVC.swift in Sources */,
 				FDC5BAC32A77E79000C9F56F /* AppDelegate.swift in Sources */,
 				FDC5BAC52A77E79000C9F56F /* SceneDelegate.swift in Sources */,
+				FDC5BADA2A77E83C00C9F56F /* HomeViewModel.swift in Sources */,
+				FDC5BAE52A794D6100C9F56F /* BorderColor + Ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		FDC5BAC82A77E79000C9F56F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FDC5BAC92A77E79000C9F56F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		FDC5BACD2A77E79100C9F56F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -292,7 +308,6 @@
 				INFOPLIST_FILE = "GuessTheFlag-HackingSwift/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,7 +335,6 @@
 				INFOPLIST_FILE = "GuessTheFlag-HackingSwift/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
